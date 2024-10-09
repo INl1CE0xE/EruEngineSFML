@@ -1,0 +1,1 @@
+sfml-graphics.lib;sfml-window.lib;sfml-system.lib;
