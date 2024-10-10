@@ -18,6 +18,8 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 add_executable(${PROJECT_NAME} 
-src/main.cpp
 ${SOURCES}
 )
+
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT EruEngineSFML)
+target_link_libraries(EruEngineSFML sfml-graphics sfml-window sfml-system)
